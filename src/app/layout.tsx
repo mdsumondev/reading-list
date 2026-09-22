@@ -22,11 +22,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
+      data-theme="light"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body data-theme="light" className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col">
         <Header />
-        <div>{children}</div>
+        <main className="flex-1">{children}</main>
       </body>
     </html>
   );

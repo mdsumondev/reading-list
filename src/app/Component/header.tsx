@@ -31,7 +31,7 @@ const Header = () => {
   );
 
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar py-5">
       <div className="container mx-auto flex justify-between items-center">
         <div className="navbar-start">
           <div className="dropdown">
